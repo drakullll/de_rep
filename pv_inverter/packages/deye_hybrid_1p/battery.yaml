@@ -148,7 +148,6 @@ sensor:
     filters:
       - multiply: 0.01
     value_type: S_WORD
-    disabled_by_default: true
     icon: "mdi:current-dc"
 
   - platform: modbus_controller
@@ -163,7 +162,6 @@ sensor:
     filters:
       - multiply: 0.01
     value_type: U_WORD
-    disabled_by_default: true
     icon: "mdi:flash-outline"
 
 select:
@@ -578,4 +576,5 @@ number:
     device_class: current
     value_type: U_WORD
     icon: "mdi:battery-charging-50"
+
 
