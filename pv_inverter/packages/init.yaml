@@ -21,7 +21,7 @@ esphome:
   comment: "${device_description} by Lewa-Reka https://github.com/drakullll/de_rep"
   project:
     name: "lewa-reka.deye-inverter"
-    version: "0.9.4"
+    version: "0.9.5"
 
 logger:
   level: WARN
@@ -72,3 +72,4 @@ modbus_controller:
     update_interval: ${update_interval}
     command_throttle: 60ms
     offline_skip_updates: 3
+
