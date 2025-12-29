@@ -137,6 +137,35 @@ sensor:
     value_type: S_WORD
     icon: "mdi:current-dc"
 
+  - platform: modbus_controller
+    modbus_controller_id: ${modbus_controller_id}
+    name: "Battery 2 Current"
+    register_type: holding
+    address: 615
+    unit_of_measurement: "A"
+    device_class: current
+    accuracy_decimals: 2
+    filters:
+      - multiply: 0.01
+    value_type: S_WORD
+    disabled_by_default: true
+    icon: "mdi:current-dc"
+
+  - platform: modbus_controller
+    modbus_controller_id: ${modbus_controller_id}
+    name: "Battery 2 Voltage"
+    id: battery_2_voltage
+    register_type: holding
+    address: 614
+    unit_of_measurement: "V"
+    device_class: voltage
+    accuracy_decimals: 2
+    filters:
+      - multiply: 0.01
+    value_type: U_WORD
+    disabled_by_default: true
+    icon: "mdi:flash-outline"
+
 select:
   - platform: modbus_controller
     use_write_multiple: true
@@ -549,3 +578,4 @@ number:
     device_class: current
     value_type: U_WORD
     icon: "mdi:battery-charging-50"
+
