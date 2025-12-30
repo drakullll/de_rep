@@ -141,7 +141,7 @@ sensor:
     modbus_controller_id: ${modbus_controller_id}
     name: "Battery 2 Current"
     register_type: holding
-    address: 615
+    address: 10012
     unit_of_measurement: "A"
     device_class: current
     accuracy_decimals: 2
@@ -155,7 +155,7 @@ sensor:
     name: "Battery 2 Voltage"
     id: battery_2_voltage
     register_type: holding
-    address: 614
+    address: 10003
     unit_of_measurement: "V"
     device_class: voltage
     accuracy_decimals: 2
@@ -576,5 +576,6 @@ number:
     device_class: current
     value_type: U_WORD
     icon: "mdi:battery-charging-50"
+
 
 
